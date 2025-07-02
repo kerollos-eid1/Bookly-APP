@@ -26,15 +26,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
     initSlidingAnimation();
-    // navigator to home view page screen
-    
-    Future.delayed(const Duration(seconds: 3), () {
-      Get.to(
-        () => const HomeView(),
-        transition: Transition.fade,
-        duration: KTranstionDuration,
-      );
-    });
+
+    // navigator to Home view page screen...
+    navigatetToHomeView();
   }
 
   @override
@@ -61,5 +55,17 @@ class _SplashViewBodyState extends State<SplashViewBody>
       end: Offset.zero,
     ).animate(animationController);
     animationController.forward();
+  }
+
+  void navigatetToHomeView() {
+    // navigator to home view page screen
+    Future.delayed(const Duration(seconds: 3), () {
+      Get.to(
+        () => const HomeView(),
+        // شكل النقل الي صفحه العرض
+        transition: Transition.fade,
+        duration: KTranstionDuration,
+      );
+    });
   }
 }
