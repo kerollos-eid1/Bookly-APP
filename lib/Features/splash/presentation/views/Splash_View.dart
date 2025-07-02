@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:listen/Features/views/widgets/spalsh_view_body.dart'
+import 'package:listen/Features/splash/presentation/views/widgets/spalsh_view_body.dart'
     show SplashViewBody;
 
 class SplashView extends StatelessWidget {
