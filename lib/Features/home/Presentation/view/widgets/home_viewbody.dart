@@ -22,10 +22,16 @@ class CustomItemImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.amber,
-        image: DecorationImage(image: AssetImage(AssetsPhoto.testimage,),),
+    return AspectRatio(
+      aspectRatio:1,
+      child: Container(
+        height: 100,
+        decoration: BoxDecoration(
+          color: Colors.amber,
+          image: DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage(AssetsPhoto.testimage,),),
+        ),
       ),
     );
   }

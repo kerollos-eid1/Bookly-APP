@@ -23,6 +23,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     animationController.dispose();
   }
 
+  @override
   void initState() {
     super.initState();
     initSlidingAnimation();
