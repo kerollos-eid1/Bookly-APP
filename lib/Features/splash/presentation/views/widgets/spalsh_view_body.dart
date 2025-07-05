@@ -65,7 +65,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
         () => const HomeView(),
         // شكل النقل الي صفحه العرض
         transition: Transition.fade,
-        duration: KTranstionDuration,
+        duration: kTranstionDuration,
       );
     });
   }
