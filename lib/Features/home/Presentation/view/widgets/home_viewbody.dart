@@ -11,7 +11,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children:
@@ -22,6 +22,7 @@ class HomeViewBody extends StatelessWidget {
         Text('Best Seller',
         style: StyleS.textStyles18,
         ),
+        const SizedBox(height: 20,),
         BestSellerListVeiw(),
       ],
       ),
@@ -36,29 +37,36 @@ class BestSellerListVeiw extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 150,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          
-          children: [
-            AspectRatio(
-          aspectRatio: 2.3 / 4,
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(11),
-              color: Colors.red,
-              image: const DecorationImage(
-                fit: BoxFit.fill,
-                image: AssetImage(AssetsPhoto.TestImage2),
-              ),
+      child: Row(
+        
+        children: [
+          AspectRatio(
+        aspectRatio: 2.3 / 4,
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(11),
+            color: Colors.red,
+            image: const DecorationImage(
+              fit: BoxFit.fill,
+              image: AssetImage(AssetsPhoto.testimage),
             ),
           ),
         ),
-        Column(
-          children: [],
-        ),
-          ],
-        ),
+      ),
+      const SizedBox(width: 30,),
+      Column(
+        children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width*0.5,
+            child: Text(
+              'Hary potter and the Globet of fire',
+              style: StyleS.textStyles20,
+               maxLines: 2,
+            ),
+            ),
+        ],
+      ),
+        ],
       ),
     );
   }
