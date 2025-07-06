@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:listen/Features/home/Presentation/view/widgets/Book_Rating.dart';
 import 'package:listen/constants.dart';
 import 'package:listen/core/photo/assets_photo.dart';
 import 'package:listen/core/style.dart';
@@ -29,34 +30,38 @@ class BestSellerListVeiw extends StatelessWidget {
         ),
       ),
       const SizedBox(width: 30,),
-      Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width*0.5,
-            child: Text(
-              'Hary potter and the Globet of fire',
-              style: StyleS.textStyles20.copyWith(fontFamily: kGtSectraFineText),
-               maxLines: 2,
-            ),
-            ),
-          const  SizedBox(height: 3,),
-          const  Text(
-            'J.K. Rowling',
-           style: StyleS.textStyles14,
-           ),
-          const SizedBox(height: 3,),
-           Row(
-            children: [
-              Text('19.99 \$',
-              style: StyleS.textStyles20.copyWith(
-                fontWeight: FontWeight.bold,),
+      Expanded(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              width: MediaQuery.of(context).size.width*0.5,
+              child: Text(
+                'Hary potter and the Globet of fire',
+                style: StyleS.textStyles20.copyWith(fontFamily: kGtSectraFineText),
+                 maxLines: 2,
               ),
-              
-            ],
-           )
-        ],
+              ),
+            const  SizedBox(height: 3,),
+            const  Text(
+              'J.K. Rowling',
+             style: StyleS.textStyles14,
+             
+             ),
+            const SizedBox(height: 3,),
+             Row(
+              children: [
+                Text('19.99 \$',
+                style: StyleS.textStyles20.copyWith(
+                  fontWeight: FontWeight.bold,),
+                ),
+              const  Spacer(), 
+              const  BookRating(),
+              ],
+             )
+          ],
+        ),
       ),
         ],
       ),
