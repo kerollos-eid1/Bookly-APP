@@ -7,6 +7,7 @@ class BestSellerListVeiwItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      // shrinkwrap $ physics == follow the sliver
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       padding: EdgeInsets.zero,
