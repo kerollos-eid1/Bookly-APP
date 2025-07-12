@@ -44,7 +44,7 @@ class BestSellerListVeiw extends StatelessWidget {
               SizedBox(
                 width: MediaQuery.of(context).size.width*0.5,
                 child: Text(
-                  'Hary potter and the Globet of fire',
+                  'Harry Potter and the Globet of Fire ',
                   style: StyleS.textStyles20.copyWith(fontFamily: kGtSectraFineText),
                    maxLines: 2,
                 ),
