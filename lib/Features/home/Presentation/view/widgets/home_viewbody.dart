@@ -24,7 +24,7 @@ child: Column(
     padding: const EdgeInsets.symmetric(horizontal: 25),
     child: const CustomAPPBar(),
   ),
-  FeaturesBooksListView(),
+  CustomBookImage(),
   const SizedBox(
     height: 40,
     ),
