@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:listen/Features/home/Presentation/view/widgets/Book_Rating.dart';
 import 'package:listen/constants.dart';
-import 'package:listen/core/photo/assets_photo.dart';
+import 'package:listen/core/utils/photo/assets_photo.dart';
 import 'package:listen/core/style.dart';
 
 

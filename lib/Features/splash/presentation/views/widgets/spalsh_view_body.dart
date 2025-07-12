@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
-import 'package:listen/Features/home/Presentation/view/Home_view.dart';
+
+import 'package:go_router/go_router.dart';
+
 import 'package:listen/Features/splash/presentation/views/widgets/sliding_text.dart';
-import 'package:listen/constants.dart';
-import 'package:listen/core/photo/assets_photo.dart';
+
+import 'package:listen/core/utils/photo/assets_photo.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -61,12 +62,16 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void navigatetToHomeView() {
     // navigator to home view page screen
     Future.delayed(const Duration(seconds: 3), () {
+      /*
       Get.to(
         () => const HomeView(),
         // شكل النقل الي صفحه العرض
         transition: Transition.fade,
         duration: kTranstionDuration,
       );
+      
+      */ 
+      GoRouter.of(context).push('/homeView');
     });
   }
 }
