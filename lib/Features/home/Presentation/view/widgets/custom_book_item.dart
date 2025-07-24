@@ -11,7 +11,7 @@ class CustomItemImage extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(14),
-          color: Colors.red,
+          
           image: const DecorationImage(
             fit: BoxFit.fill,
             image: AssetImage(AssetsPhoto.testimage),
